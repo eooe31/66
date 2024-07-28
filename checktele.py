@@ -188,8 +188,8 @@ async def hunterusername(event):
         try:
             ch = await eighthon(
                 functions.channels.CreateChannelRequest(
-                    title="جاري الصيد حبي",
-                    about="تيم كبينه صاد يوزر يابه",
+                    title="صيد يوزرات ",
+                    about="تم الصيد بيبي ",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -213,7 +213,8 @@ async def hunterusername(event):
                         channel=ch, username=username
                     )
                 )
-                await event.client.send_file(event.chat_id, "https://t.me/x_o_x/468", caption=
+                await event.client.send_message(
+                    event.chat_id, "https://t.me/x_o_x/468", caption=
                     f"⌯ تم الصيد !'𓆪\n⎱ UserName: ↣ (@{username}❳!\n⎱ Hunting Log {trys2[0]}\n⎱ by ",
                 )
                 break
@@ -244,7 +245,7 @@ async def hunterusername(event):
         trys[0] += 1
     isclaim.clear()
     isclaim.append("off")
-    await event.client.send_message("@KNnNK", "**- تم الصيد  **")
+    await event.client.send_message(event.chat_id, "**- تم الصيد  **")
 
 
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت"))
@@ -365,7 +366,7 @@ async def _(event):
                         await event.client.send_message(event.chat_id, f'''** 
 𝙷𝚄𝙽𝚃𝙸𝙽𝙶 (@{username})
 × ᴄʟɪᴄᴋs ↬  {trys}
-lD: @Max985 / @P8_PP ×  **
+lD: @Max985 / @P8_PP × @HFFHH **
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
