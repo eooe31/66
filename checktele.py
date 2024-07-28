@@ -110,7 +110,7 @@ def gen_user(choice):
     elif choice == "تيست":
         c = random.choices(a)
         d = random.choices(e)
-        f = [c[0], "_", d[0], "_", c[0], "_", c[0], "_", d[0], d[0]] 
+        [c[0], "_", d[0], "_", c[0], "_", c[0], "_", d[0], d[0]] 
         username = "".join(f)
     else:
         return "error"
@@ -214,7 +214,7 @@ async def hunterusername(event):
                     )
                 )
                 await event.client.send_message(
-                    event.chat_id, "https://t.me/x_o_x/468", caption=
+                    event.chat_id,
                     f"⌯ تم الصيد !'𓆪\n⎱ UserName: ↣ (@{username}❳!\n⎱ Hunting Log {trys2[0]}\n⎱ by ",
                 )
                 break
@@ -245,7 +245,7 @@ async def hunterusername(event):
         trys[0] += 1
     isclaim.clear()
     isclaim.append("off")
-    await event.client.send_message(event.chat_id, "**- تم الصيد  **")
+    await event.client.send_message("@knnnk", "**- تم الصيد  **")
 
 
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت"))
