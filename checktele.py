@@ -244,7 +244,7 @@ async def hunterusername(event):
         trys[0] += 1
     isclaim.clear()
     isclaim.append("off")
-    await event.client.send_message("@KNnNK"**- تم الصيد  **")
+    await event.client.send_message("@KNnNK", "**- تم الصيد  **")
 
 
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت"))
