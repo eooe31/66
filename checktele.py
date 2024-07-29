@@ -201,8 +201,8 @@ async def hunterusername(event):
         try:
             ch = await eighthon(
                 functions.channels.CreateChannelRequest(
-                    title="صيد يوزرات ",
-                    about="تم الصيد بيبي ",
+                    title="صيد تيم كبينه يابه",
+                    about="تم الصيد يم تيم كبينه",
                 )
             )
             ch = ch.updates[1].channel_id
