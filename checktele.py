@@ -51,66 +51,72 @@ def check_user(username):
 
 
 def gen_user(choice):
-    if choice == "نص":
+    if choice == "خماسي":
         c = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], d[0], d[0], d[0], c[0], c[0]]
+        d = random.choices(a)
+        s = random.choices('erioaszxcv45789')
+        f = [c[0], s[0], s[0], s[0], d[0]]
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(b)
-            f = [c[0], c[0], d[0], d[0], d[0], c[0]]
+            d = random.choices(a)
+            s = random.choices('erioaszxcv45789')
+            f = [c[0], d[0], s[0], s[0], s[0]]
             username = ''.join(f)
         else:
             pass
-    elif choice == "سد":
+    elif choice == "سداسيات":
         c = random.choices(a)
         d = random.choices(e)
-        f = [c[0], d[0], c[0], d[0], d[0], d[0]]
+        f = [c[0], d[0], c[0], c[0], d[0], d[0]]
+        random.shuffle(f)
         username = "".join(f)
-    elif choice == "سداسيات":
-        c = d = random.choices(e)
-        d = random.choices(e)
+    elif choice == "سداسي":
+        c = d = random.choices(a)
+        d = random.choices(a)
         f = [c[0], d[0], d[0], d[0], d[0], c[0]]
         random.shuffle(f)
         username = "".join(f)
-    elif choice == "بوتات":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], s[0], d[0]]
-        # random.shuffle(f)
-        username = "".join(f)
-        username = username + "bot"
-
-    elif choice == "سدا":
-        c = random.choices(a)
-        d = random.choices(e)
-        f = [c[0], c[0], d[0], d[0], d[0], d[0]]
-        username = "".join(f)
-
-    elif choice == "سداس":
-        c = random.choices(a)
-        d = random.choices(e)
+    elif choice == "سداسيا":
+        c = d = random.choices(a)
+        d = random.choices(b)
         f = [c[0], d[0], d[0], d[0], d[0], c[0]]
+        random.shuffle(f)
+        username = "".join(f)
+
+    elif choice == "سدسي":
+        c = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], d[0], d[0], c[0], c[0]]
+        random.shuffle(f)
         username = "".join(f)
 
     elif choice == "سدس":
+        c = random.choices('ertioasflzxcvnm')
+        d = random.choices('ertioasflzxcvnm')
+        f = [c[0], d[0], d[0], d[0], d[0], c[0]]
+        random.shuffle(f)
+        username = "".join(f)
+
+    elif choice == "رباعي":
         c = random.choices(a)
-        d = random.choices(e)
-        f = [c[0], c[0], d[0], d[0], c[0], c[0]]
+        d = random.choices(a)
+        f = [c[0], d[0], "_", d[0], d[0]]
+        random.shuffle(f)
         username = "".join(f)
         
-    elif choice == "سدو":
+    elif choice == "رباعيا":
         c = random.choices(a)
-        d = random.choices(e)
-        f = [c[0], c[0], c[0], d[0], c[0], d[0]]
+        d = random.choices(b)
+        f = [c[0], c[0], "_", c[0], d[0]]
+        random.shuffle(f)
         username = "".join(f)
         
-    elif choice == "تيست":
+    elif choice == "رباع":
         c = random.choices(a)
-        d = random.choices(e)
-        [c[0], "_", d[0], "_", c[0], "_", c[0], "_", d[0], d[0]] 
+        d = random.choices(b)
+        f = [c[0], d[0], "_", d[0], d[0]]
+        random.shuffle(f)
         username = "".join(f)
     else:
         return "error"
@@ -124,31 +130,38 @@ async def _(event):
 **-- -- -- -- -- -- -- -- --
  الانواع :
  -- -- -- -- - 
- نص
- s555ss - ss555s
+ خماسي 
+ sxxxc - s888c - cvrrr - vc888
  -- -- -- -- -- -- -- -- -- -- --
-  سد
-  sxsxxx
+  سداسيات
+  sxxxss - s666ss
  -- -- -- -- -- 
- سداسيات 
- عشوائي 
+ سداسي
+ sxxxsx - cssscs 
+ نمط حروف 
   -- -- -- -- --  
-  بوتات
+  سداسيا
+  s8888s - c999c9
+  نمط 4 ارقام
  -- -- -- -- --
- سدا
- ssxxxx
+ سدسي
+ ss88ss - x99xxx
+ نمط رقمين
  -- -- -- -- -- 
  سدس
- ss66ss
+ نمط حروف 'ertioasflzxcvnm'
  -- -- -- -- -- 
- سدو 
- sssxsx
+ رباعي 
+ sxs_s - ccx_c
+ نمط حروف
  -- -- -- -- -- 
- سداس
- sxxxxs
+ رباعيا
+ s7s_s - c_c9c
+ نمط رقم
   -- -- -- -- -- 
-  س
-  ssxssx
+  رباع 
+  s_777 - c7_77
+  نمط 3 ارقام
    -- -- -- -- -- 
    طريقه الصيد هيه كالتالي
  - .صيد + نوع الصيد تكتب الاسم 
@@ -163,7 +176,7 @@ async def _(event):
  الامر:   `.حالة الصيد`
  • لمعرفة عدد المحاولات للصيد
 
-@MAX985**
+@KNNNK**
 
 '''
     )
